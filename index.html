@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+      <link href="css/cacc.css" rel="stylesheet" type="text/css" media="all" />
+
+  <style>
+.fts {
+    width: 120px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.fts:hover {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+}
+
+</style>
+<style>
+.fts2 {
+    width: 130px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.fts2:hover {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+}
+
+</style>
+<style>
+.fts3 {
+    width: 120px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+   padding-left: 4px;
+}
+
+.fts3:hover {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+}
+
+</style>
+ <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Felipe Becerra">
+
+<script language="JavaScript">
+<!-- 
+var space = " ";
+var speed = "100";
+var pos = 0;
+var msg = "Treft Development";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed);
+}
+Scroll();
+-->
+</script>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/csss.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="top" class="header">
+        
+      <div class="vert-text">
+          <h1>Treft Development</h1>
+	  <img class="img-rounded" alt="Company Logo" src="./img/pnglo.png" height="100" width="100" align="center"  />
+		 <ul class="list-inline">
+     
+                <a href="https://www.instagram.com/treftweb/" target="_blank"><img src="./img/instagram.png" height="113" width="106" class="fts" ></img> </a>
+				<a href="https://github.com/bxerra" target="_blank"><img src="./img/github.png" height="120" width="120" class="fts3" ></img> </a>
+                <a href="https://twitter.com/treftweb" target="_blank"><img src="./img/twitter.png" height="130" width="130" class="fts2" ></img> </a>
+			  	
+         </ul>	
+			<br>
+      </div>
+    </div>
+
+
+	  <div id="nav">
+  
+
+ 
+
+
+		</div>	
+      </div>
+		</div>
+      </div>
+
+
+    <script src="js/jquery.js"></script>
+	<script src="js/jquery-scrolltofixed-min.js"></script>
+	<script src="js/jquery.vegas.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+
+
+	<script>
+$.vegas('slideshow', {
+  delay:5000,
+  backgrounds:[
+     { src:'./img/foto.jpeg', fade:2000 },
+	 { src:'./img/foto2.jpeg', fade:2000 },
+    { src:'./img/foto3.jpeg', fade:2000 },
+	 { src:'./img/foto4.jpeg', fade:2000 },
+
+	   
+  ]
+})('overlay', {
+src:'./img/overlay.png'
+});
+
+	</script>
+
+
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+<div class="footer-grids">
+				<div class="footer one">
+					<h3>More About Treft</h3>
+					<p> This company started with only one developer, and now we are searching for people to help us!
+                    We research AI, machine learning and Neural networks systems and we try to implement them into our code.</p>
+					<div class="clear"></div>
+				</div>
+				<div class="footer two">
+					<h3>More Social media sites!</h3>
+					<ul>
+						<li><a class="fb" href="https://www.facebook.com/Treft-429774397481510/" target="_blank"><i></i>Like us on Facebook</a></li>
+						<li><a class="fb1" href="https://github.com/str0k3h" target="_blank"><i></i>Follow my second GitHub Site</a></li>
+					</ul>
+				</div>
+				<div class="footer three">
+					<h3>Contact Information</h3>
+					<ul>
+						<li>Treft Development <span>Buenos Aires,</span>Argentina.  </li>
+						<li>Capital Federal  </li>
+						<li><a href="mailto:info@example.com">treftweb@gmail.com</a> </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="copy-right-grids">
+				<div class="copy-left">
+						<p class="footer-gd">© 2018 Treft Development</p>
+				</div>
+
+				<div class="clear"></div>
+  </body>
+
+</html>
